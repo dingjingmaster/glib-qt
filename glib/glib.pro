@@ -28,4 +28,11 @@ DEFINES                 += \
     GLIB_COMPILATION
 
 
+LIBS                    += \
+#    -L../gthread                  \
+#    -lgthread                               \
+
+
 include($$PWD/glib.pri)
+include($$PWD/libcharset/charset.pri)
+include($$PWD/deprecated/deprecated.pri)

@@ -67,7 +67,8 @@
 
 /* Get GLIB_CHARSETALIAS_DIR.  */
 #ifndef GLIB_CHARSETALIAS_DIR
-# define GLIB_CHARSETALIAS_DIR LIBDIR
+//# define GLIB_CHARSETALIAS_DIR LIBDIR
+# define GLIB_CHARSETALIAS_DIR "/usr/lib"
 #endif
 
 #if defined _WIN32 || defined __WIN32__ || defined __CYGWIN__ || defined __EMX__ || defined __DJGPP__

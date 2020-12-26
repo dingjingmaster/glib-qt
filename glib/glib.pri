@@ -68,6 +68,7 @@ HEADERS                 += \
     gstrfuncs.h                             \
     gunibreak.h                             \
     glib-init.h                             \
+    gmessages.h                             \
     gprintfint.h                            \
     glib_trace.h                            \
     gfileutils.h                            \
@@ -165,6 +166,7 @@ SOURCES                     += \
     gcharset.c                              \
     glib-unix.c                             \
     gtimezone.c                             \
+    gmessages.c                             \
     gdatetime.c                             \
     gsequence.c                             \
     gchecksum.c                             \
@@ -187,6 +189,7 @@ SOURCES                     += \
     gvarianttype.c                          \
     gvariant-core.c                         \
     gbookmarkfile.c                         \
+    gthread-posix.c                         \
     gvarianttypeinfo.c                      \
     gvariant-serialiser.c                   \
 
