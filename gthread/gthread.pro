@@ -30,8 +30,8 @@ HEADERS                 += \
     gmoduleconf.h                           \
 
 
+HEADERS                 += \
+
+
 SOURCES                 += \
-    gmodule.c                               \
-    gmodule-ar.c                            \
-    gmodule-dl.c                            \
-    gmodule-win32.c                         \
+    gthread-impl.c
