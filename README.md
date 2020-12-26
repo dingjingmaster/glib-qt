@@ -12,4 +12,4 @@
 
 ## 目前基于的版本
 
--[x] d48e22e46 (HEAD -> master, origin/master, origin/HEAD) Update Catalan translation
+- [x] d48e22e46 (HEAD -> master, origin/master, origin/HEAD) Update Catalan translation
