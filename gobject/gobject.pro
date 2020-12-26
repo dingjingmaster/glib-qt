@@ -1,5 +1,5 @@
 TEMPLATE                = lib
-TARGET                  = glib
+TARGET                  = gobject
 
 
 QT                      += \
@@ -21,11 +21,12 @@ CONFIG                  += \
 
 
 INCLUDEPATH             += \
+    $$PWD/../glib                           \
     $$PWD/../                               \
 
 
 DEFINES                 += \
-    GLIB_COMPILATION
+    GOBJECT_COMPILATION                     \
 
 
-include($$PWD/glib.pri)
+include($$PWD/gobject.pri)
