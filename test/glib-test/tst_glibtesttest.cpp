@@ -39,7 +39,7 @@ void GLibTestTest::cleanupTestCase()
 
 void GLibTestTest::test_case_assert ()
 {
-    g_assert(42 < 0);
+    g_assert(42 > 0);
 }
 
 QTEST_APPLESS_MAIN(GLibTestTest)

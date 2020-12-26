@@ -16,4 +16,5 @@ test.depends        = \
     glib                                    \
 
 OTHER_FILES         += \
-    $$PWD/run-test.sh
+    $$PWD/run-test.sh                       \
+    $$PWD/README.md                         \
