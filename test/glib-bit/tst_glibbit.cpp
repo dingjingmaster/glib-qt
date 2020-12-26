@@ -162,6 +162,7 @@ static gint naive_bit_nth_msf (gulong mask, gint nth_bit)
     if (nth_bit < 0 || G_UNLIKELY (nth_bit > GLIB_SIZEOF_LONG * 8)) {
         nth_bit = GLIB_SIZEOF_LONG * 8;
     }
+
     while (nth_bit > 0) {
         nth_bit--;
         if (mask & (1UL << nth_bit)) {
