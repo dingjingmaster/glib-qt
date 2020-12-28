@@ -1,6 +1,7 @@
 #include <QtTest>
 
 #include "glib/glib.h"
+#include "glib/gmacros.h"
 
 #if defined(__GNUC__) && (__GNUC__ >= 4)
 # define TEST_BUILTINS 1
@@ -44,6 +45,9 @@ public:
 private slots:
     void initTestCase();
     void cleanupTestCase();
+    void test_bit_default();
+
+private:
     int test_case1();
 
 };
@@ -68,12 +72,16 @@ void glibbit::cleanupTestCase()
 
 }
 
+void glibbit::test_bit_default()
+{
+    test_case1();
+}
+
 int glibbit::test_case1()
 {
     gulong i;
     gint nth_bit;
 
-    /* we loop like this: 0, -1, 1, -2, 2, -3, 3, ... */
     for (i = 0; (glong)i < 1500 ; i = -(i+((glong)i>=0))) {
 #if TEST_BUILTINS
         TEST (naive_bit_storage, builtin_bit_storage, i);

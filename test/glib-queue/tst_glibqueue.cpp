@@ -50,6 +50,9 @@ public:
 private slots:
     void initTestCase();
     void cleanupTestCase();
+    void test_asyncqueue_default();
+
+private:
     int test_asyncqueue();
     void test_asyncqueue_basetest ();
 
@@ -73,6 +76,11 @@ void GLIbQueue::initTestCase()
 void GLIbQueue::cleanupTestCase()
 {
 
+}
+
+void GLIbQueue::test_asyncqueue_default()
+{
+    test_asyncqueue();
 }
 
 int GLIbQueue::test_asyncqueue ()
@@ -133,6 +141,8 @@ int GLIbQueue::test_asyncqueue ()
     g_main_loop_unref (main_loop);
     g_thread_pool_free (thread_pool, TRUE, TRUE);
     g_async_queue_unref (async_queue);
+
+    return 0;
 }
 
 void GLIbQueue::test_asyncqueue_basetest()

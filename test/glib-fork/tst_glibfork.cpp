@@ -42,6 +42,8 @@ public:
 private slots:
     void initTestCase();
     void cleanupTestCase();
+    void test_fork_default();
+private:
     int test_case1();
 
 };
@@ -64,6 +66,11 @@ void GlibFork::initTestCase()
 void GlibFork::cleanupTestCase()
 {
 
+}
+
+void GlibFork::test_fork_default()
+{
+    test_case1();
 }
 
 int GlibFork::test_case1()
